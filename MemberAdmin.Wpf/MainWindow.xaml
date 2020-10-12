@@ -28,9 +28,9 @@
             </ListView.View>
         </ListView>
         <UniformGrid Grid.Row="2" Columns="4">
-            <Button Margin="10,10,10,10" Content="Neu" x:Name="btnNew"/>
+            <Button Style="{StaticResource ResourceKey=btnClassic}" Margin="10,10,10,10" Content="Neu" x:Name="btnNew"/>
             <Button Margin="10,10,10,10" Content="Löschen" x:Name="btnDelete"/>
-            <Button Margin="10,10,10,10" Content="Bearbeiten" x:Name="btnEdit"/>
+            <Button Style="{StaticResource ResourceKey=btnClassic}" Margin="10,10,10,10" Content="Bearbeiten" x:Name="btnEdit"/>
             <Button Margin="10,10,10,10" Content="Abbrechen" x:Name="btnCancle"/>
         </UniformGrid>
     </Grid>
