@@ -68,7 +68,22 @@
                 </EventTrigger>
             </Style.Triggers>
         </Style>
-        
-        
+
+        <Style x:Key="titel" TargetType="TextBlock">
+            <Setter Property="Background" Value="AliceBlue"></Setter>
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation To="Green" 
+                                    Storyboard.TargetProperty="(TextBlock.Background).(SolidColorBrush.Color)" 
+                                    FillBehavior="Stop" RepeatBehavior="10"
+                                    Duration="0:0:3"></ColorAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+
     </Application.Resources>
 </Application>
